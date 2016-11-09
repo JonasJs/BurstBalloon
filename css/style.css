@@ -2,18 +2,23 @@
 	width: 500px;
     margin: 0 auto;
     height: 600px;
-	background-image: url(images/background.png);
+	background-image: url(../images/background.png);
+}
+.menu{
+	position: relative;
 }
 .botoes{
     margin-left: 100px;
     margin-top: 420px;
     position: absolute;
 }
-.baloes img{
+.baloes{
 	width: 460px;
     position: absolute;
-	margin-top: 95px;
-    left: 33%;
+    margin: 95px 22px;
+}
+.baloes img{
+	width: 450px;
 }
 .animate
 {
@@ -46,4 +51,8 @@
 	transform: translate(0px,5px);
   -webkit-transform: translate(0px,5px);
 	border-bottom: 1px solid;
+}
+
+.nivel{
+	position: absolute;
 }
