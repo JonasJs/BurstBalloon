@@ -1,7 +1,9 @@
+@import "variavel";
+
+
 .container{
-	width: 500px;
+	@include fullpage();
     margin: 0 auto;
-    height: 600px;
 	background-image: url(../../images/background.png);
 		.baloes img{
 			width: 460px;
@@ -42,6 +44,28 @@
 					border-bottom: 1px solid;
 				}
 		}
+		.btn-selec{
+			position: absolute;
+    		z-index: 999;
+		}
+		.nivel-drop{
+			transition: all 0.9s cubic-bezier(0.4, 0, 1, 1);
+			opacity: 0.0;
+			position: absolute;
+    		//z-index: 99;
+			@include fullpage();
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#025159+0,203040+100 */
+			background: #025159; /* Old browsers */
+			background: -moz-radial-gradient(center, ellipse cover, #025159 0%, #203040 100%); /* FF3.6-15 */
+			background: -webkit-radial-gradient(center, ellipse cover, #025159 0%,#203040 100%); /* Chrome10-25,Safari5.1-6 */
+			background: radial-gradient(ellipse at center, #025159 0%,#203040 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#025159', endColorstr='#203040',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+			 //&:hover{
+				//opacity: 0.9;
+			 //}
+			 
+		}
+
 	}
 
 

@@ -3,30 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Jogo dos Balões</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/css/style.css">
 </head>
 <script type="text/javascript" src="js/javascript.js"></script>
 <body>
+
 	<section class="container">
-		<div class="menu">
-			<div class="baloes"> 
-				<img src="images/gif.gif">
-			</div>
-			<div class="botoes">
-				<a href="#" class="action-button shadow animate blue">Play</a>
-				<a href="#" class="action-button shadow animate red">Créditos</a>
-			</div>
-		</div>
-		<div class="Nivel">
-			<select>
+		<div class="nivel">
+			<select class="btn-selec">
 				<option> Fácil </option>
 				<option> Normal </option>
 				<option> Dificil </option>
 			</select>
-
-		</div>	
+			<div class="nivel-drop"  id="popup" >
+			</div>
+		</div>
+		<div class="menu">
+			<div class="baloes">
+				<img src="images/gif.gif">
+			</div>
+			<div class="botoes">
+				<a href="#" onclick="teste()" class="action-button shadow animate blue">Play</a>
+				<a href="#" class="action-button shadow animate red">Créditos</a>
+			</div>
+		</div>
+		
 	</section>
-	
-
 </body>
 </html>
